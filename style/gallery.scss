@@ -1,8 +1,8 @@
-
 *{
     padding: 0;
     margin: 0;
 }
+
 body{
     background-color: #172121;
 }
@@ -12,7 +12,7 @@ body{
     display: block;
     background-color: #F7FFF7;
     
-    &:focus{
+    &:focus-within{
         pointer-events: none;
         #dropdown{
             display: block;
@@ -34,47 +34,21 @@ header{
     display: inline-block;
     text-align: center;
 }
-
-.parallax{
-    min-height: 500px;
-    background-image:url(images/italybackgroundimage.jpeg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover
-    
-}
 .description{
     background-color: #172121;
     height: 1000px;
     font-size: 30px;
     text-align: center;
-    
+    color: #F7FFF7;
 }
-img{
-    border: #F7FFF7 1px solid;
-    width: 250px;
-    height: 200px;
-    padding: 5px;
-    display: inline-block;
-    background-color: #2C6E49;
 
-}
-div.scrollmenu{
-    background-color: #172121;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    &::-webkit-scrollbar{
-        display: none;
-    }
-}
-div.scrollmenu img{
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px;
+.parallax{
+    min-height: 500px;
+    background-image:url(/images/Pizza-chef.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
     
 }
 .logo{
@@ -82,4 +56,13 @@ div.scrollmenu img{
     height: auto;
     background-color: #2C6E49;
     position: relative;
+}
+img{
+    border: #F7FFF7 1px solid;
+    width: 100vw;
+    
+    padding: 5px;
+    display: inline-block;
+    background-color: #000000;
+
 }

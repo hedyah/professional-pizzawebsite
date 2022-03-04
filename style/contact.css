@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #172121;
+}
+
+#menu {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: block;
+  background-color: #F7FFF7;
+}
+
+#menu:focus-within {
+  pointer-events: none;
+}
+
+#menu:focus-within #dropdown {
+  display: block;
+  pointer-events: all;
+}
+
+#dropdown {
+  display: none;
+  position: relative;
+  background-color: #f7fff7;
+  width: 30vw;
+}
+
+header {
+  color: #F7FFF7;
+  position: relative;
+  background-color: #9A031E;
+  display: inline-block;
+  text-align: center;
+}
+
+img {
+  border: #F7FFF7 1px solid;
+  width: 100vw;
+  padding: 5px;
+  display: inline-block;
+  background-color: #fffdfd;
+}
+
+.logo {
+  width: 30px;
+  height: auto;
+  background-color: #2C6E49;
+  position: relative;
+}
+
+.parallax {
+  min-height: 500px;
+  background-image: url(/images/italian-restaurants.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#map h2 {
+  text-align: center;
+  background-color: #2C6E49;
+  color: #F7FFF7;
+}
+
+#map iframe {
+  width: 100vw;
+  height: 50vh;
+}
+
+.description {
+  color: #F7FFF7;
+  background-color: #172121;
+}
+
+.description h1, .description h2 {
+  text-align: center;
+  background-color: #2C6E49;
+}
+
+.description p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.description button {
+  background-color: #F7FFF7;
+  color: #172121;
+  left: 50%;
+}
+
+.description button:active {
+  background-color: blue;
+}
+
+.reviews {
+  text-align: center;
+}
+/*# sourceMappingURL=contact.css.map */
