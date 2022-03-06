@@ -7,10 +7,21 @@ body{
     background-color: #172121;
 }
 
+#dropdown{
+    display: none;
+    position: absolute;
+    background-color: rgba($color: #F7FFF7, $alpha: 0.4);
+    width: 100vw;
+    text-align: center;
+    a{
+        text-decoration: none;
+    }
+}
 #menu{
     user-select: none;
     display: block;
     background-color: #F7FFF7;
+    color: black;
     
     &:focus-within{
         pointer-events: none;
@@ -19,13 +30,12 @@ body{
             pointer-events: all;
         }
     }
+    a{
+        text-decoration: none;
+        color: black;
+        
+    }
 
-}
-#dropdown{
-    display: none;
-    position: relative;
-    background-color: #f7fff7;
-    width: 30vw;
 }
 header{
     color: #F7FFF7;
@@ -33,28 +43,35 @@ header{
     background-color: #9A031E;
     display: inline-block;
     text-align: center;
-}
-img{
-    border: #F7FFF7 1px solid;
-    width: 100vw;
-    padding: 5px;
-    display: inline-block;
-    background-color: #fffdfd;
-}
-.logo{
-    width: 30px;
-    height: auto;
-    background-color: #2C6E49;
-    position: relative;
+    .logo{
+        width: 30px;
+        height: auto;
+        background-color: #2C6E49;
+        position: relative;
+    }
 }
 
+
+
 .parallax{
-    min-height: 500px;
+    min-height: 45vh;
     background-image:url(/images/italian-restaurants.jpeg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+
+    .centertext{
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        font-size: 40px;
+        font-family: cursive;
+        color: white;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        border: #F7FFF7 5px double;
+    }    
     
 }
 #map{
@@ -62,6 +79,9 @@ img{
         text-align: center;
         background-color: #2C6E49;
         color: #F7FFF7;
+        font-size: 30px;
+        font-family: cursive;
+
     }
     iframe{
         width: 100vw;
@@ -72,24 +92,98 @@ img{
 .description{
     color: #F7FFF7;
     background-color: #172121;
-    h1, h2{
-        text-align: center;
-        background-color: #2C6E49;
-    }
     
-    p{
+    .hoursofoperation{
+
         text-align: center;
-        font-size: 30px;
-    }
-    button{
-        background-color: #F7FFF7;
-        color: #172121;
-        left: 50%;
-        &:active{
-            background-color: blue;
+        font-family: sans-serif;
+        font-size: 20px;
+        h1, h2{
+            text-align: center;
+            background-color: #2C6E49;
+            font-size: 30px;
+            font-family: cursive;
+        }
+        a{
+            text-decoration: none;
+            color: #172121;
+            font-size: 16px;
+            background-color: #F7FFF7;
+        }
+        li{
+            list-style-type: none;
+        }
+        img{
+            
+            width: 100vw;
+            height: 35vh;
+            
+            
         }
     }
+
+    .review{
+        text-align: center;
+        font-size: 20px;
+        font-family: sans-serif;
+        h1, h2{
+            text-align: center;
+            background-color: #2C6E49;
+            font-size: 30px;
+            font-family: cursive;
+        }
+        a{
+            background-color: #F7FFF7;
+            text-decoration: none;
+            color: #172121;
+            font-size: 16px;
+            font-family: sans-serif;
+            text-align: center;
+        }
+    }
+
 }
-.reviews{
-    text-align: center;
+
+
+.footergrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #9A031E;
+    
+    .griditem{
+        
+        border: solid rgb(0, 0, 0) 1px;
+        color: #000000;
+        text-align: center;
+        font-size: 15px;
+        font-family: sans-serif cursive;
+        padding: 5px;
+        margin: 5px;
+        li{
+            list-style-type: none;
+        }
+
+        a{
+            text-decoration: none;
+            font-size: 17px;
+            color: #172121;
+        }
+        h3{
+            font-size: 20px;
+            font-family: cursive;
+        }
+
+        h2{
+            font-family: cursive;
+            font-size: 25px;
+        }
+        img{
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            background-color: #2C6E49;
+        }
+    
+    }
 }
+

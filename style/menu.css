@@ -14,6 +14,7 @@ body {
           user-select: none;
   display: block;
   background-color: #F7FFF7;
+  color: black;
 }
 
 #menu:focus-within {
@@ -25,11 +26,17 @@ body {
   pointer-events: all;
 }
 
+#menu a {
+  text-decoration: none;
+  color: black;
+}
+
 #dropdown {
   display: none;
-  position: relative;
-  background-color: #f7fff7;
-  width: 30vw;
+  position: absolute;
+  background-color: rgba(247, 255, 247, 0.4);
+  width: 100vw;
+  text-align: center;
 }
 
 header {
@@ -40,28 +47,33 @@ header {
   text-align: center;
 }
 
-.logo {
+header .logo {
   width: 30px;
   height: auto;
   background-color: #2C6E49;
   position: relative;
 }
 
-img {
-  border: #F7FFF7 1px solid;
-  width: 250px;
-  padding: 5px;
-  display: inline-block;
-  background-color: #000000;
-}
-
 .parallax {
-  min-height: 500px;
+  height: 45vh;
   background-image: url(/images/Gelato.jpeg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.parallax .centertext {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 43px;
+  font-family: cursive;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: #F7FFF7 5px double;
 }
 
 .description {
@@ -72,8 +84,71 @@ img {
   color: #F7FFF7;
 }
 
-.description h1 {
+.description p {
+  font-size: 18px;
+}
+
+.description .menuitem img {
+  border: #F7FFF7 1px solid;
+  width: 250px;
+  padding: 5px;
+  display: inline-block;
+  background-color: #000000;
+}
+
+.description .menuitem h2 {
   background-color: #2C6E49;
-  font: 1em sans-serif;
+  font-size: 25px;
+}
+
+.description .menuitem li {
+  border: #F7FFF7 solid 2px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.footergrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  background-color: #9A031E;
+}
+
+.footergrid .griditem {
+  border: solid black 1px;
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+  font-family: sans-serif cursive;
+  padding: 5px;
+  margin: 5px;
+}
+
+.footergrid .griditem li {
+  list-style-type: none;
+}
+
+.footergrid .griditem a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #172121;
+}
+
+.footergrid .griditem h3 {
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.footergrid .griditem h2 {
+  font-family: cursive;
+  font-size: 25px;
+}
+
+.footergrid .griditem img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #2C6E49;
 }
 /*# sourceMappingURL=menu.css.map */
