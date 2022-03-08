@@ -27,6 +27,7 @@ body {
   display: block;
   background-color: #F7FFF7;
   color: black;
+  font-size: 18px;
 }
 
 #menu:focus-within {
@@ -49,13 +50,15 @@ header {
   background-color: #9A031E;
   display: inline-block;
   text-align: center;
+  width: 100vw;
 }
 
 header .logo {
-  width: 30px;
+  width: 40px;
   height: auto;
   background-color: #2C6E49;
   position: relative;
+  border-radius: 50%;
 }
 
 .parallax {
@@ -86,6 +89,8 @@ header .logo {
   color: #F7FFF7;
   font-size: 30px;
   font-family: cursive;
+  border: #F7FFF7 solid 2px;
+  margin: 8px;
 }
 
 #map iframe {
@@ -102,6 +107,8 @@ header .logo {
   text-align: center;
   font-family: sans-serif;
   font-size: 20px;
+  padding: 5px;
+  margin: 5px;
 }
 
 .description .hoursofoperation h1, .description .hoursofoperation h2 {
@@ -109,6 +116,8 @@ header .logo {
   background-color: #2C6E49;
   font-size: 30px;
   font-family: cursive;
+  border: solid #F7FFF7 2px;
+  margin: 8px;
 }
 
 .description .hoursofoperation a {
@@ -128,6 +137,8 @@ header .logo {
 }
 
 .description .review {
+  margin: 5px;
+  padding: 5px;
   text-align: center;
   font-size: 20px;
   font-family: sans-serif;
@@ -138,6 +149,8 @@ header .logo {
   background-color: #2C6E49;
   font-size: 30px;
   font-family: cursive;
+  border: #F7FFF7 solid 2px;
+  margin: 8px;
 }
 
 .description .review a {
@@ -146,6 +159,12 @@ header .logo {
   color: #172121;
   font-size: 16px;
   font-family: sans-serif;
+  text-align: center;
+}
+
+footer {
+  color: #F7FFF7;
+  background-color: #9A031E;
   text-align: center;
 }
 
