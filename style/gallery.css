@@ -3,8 +3,9 @@
   margin: 0;
 }
 
-body {
+html, body {
   background-color: #172121;
+  scroll-behavior: smooth;
 }
 
 #menu {
@@ -54,7 +55,7 @@ header {
 }
 
 header .logo {
-  width: 40px;
+  width: 50px;
   height: auto;
   background-color: #2C6E49;
   position: relative;
@@ -63,7 +64,6 @@ header .logo {
 
 .description {
   background-color: #172121;
-  height: 1830px;
   font-size: 30px;
   text-align: center;
   color: #F7FFF7;
@@ -75,7 +75,6 @@ header .logo {
 
 .description .aboutusimage img {
   width: 28vw;
-  height: 27vh;
   border: double #F7FFF7 3px;
   padding: 2px;
   margin: 2px;
@@ -84,6 +83,15 @@ header .logo {
 .description .aboutusimage img:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+}
+
+.description .video h4 {
+  font-family: cursive;
+  background-color: #2C6E49;
+  border: solid #F7FFF7 2px;
+  font-size: 33px;
+  margin: 8px;
+  padding: 8px;
 }
 
 .description .video iframe {
@@ -96,7 +104,7 @@ header .logo {
   background-color: #2C6E49;
   border: solid #F7FFF7 2px;
   font-size: 33px;
-  margin: 5px;
+  margin: 8px;
   padding: 8px;
 }
 
@@ -109,7 +117,6 @@ header .logo {
 
 .description .aboutcontent img {
   width: 100vw;
-  height: 30vh;
   background-color: #000000;
 }
 
@@ -133,6 +140,29 @@ header .logo {
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
   border: #F7FFF7 5px double;
+}
+
+.scrolltothetop {
+  position: fixed;
+  bottom: 30px;
+  float: right;
+  right: 18.5%;
+  max-width: 30px;
+  padding: .5px;
+  left: 77.25%;
+}
+
+.scrolltothetop a {
+  font-size: 33px;
+  text-decoration: none;
+  background-color: #F7FFF7;
+  border: #172121;
+  border-radius: 4px;
+  color: #172121;
+}
+
+.scrolltothetop a:hover {
+  background-color: #2C6E49;
 }
 
 footer {
@@ -184,5 +214,74 @@ footer {
   width: 35px;
   height: 35px;
   background-color: #2C6E49;
+}
+
+@media only screen and (min-width: 768px) {
+  .footergrid {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9A031E), to(#520505));
+    background-image: linear-gradient(#9A031E, #520505);
+    width: 100vw;
+  }
+  .footergrid .griditem {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9A031E), to(#520505));
+    background-image: linear-gradient(#9A031E, #520505);
+  }
+  .footergrid .griditem h2 {
+    font-size: 28px;
+  }
+  .footergrid .griditem h3 {
+    font-size: 24px;
+  }
+  .footergrid .griditem a {
+    font-size: 24px;
+    color: #000;
+  }
+  .footergrid .griditem img {
+    width: 45px;
+    height: 45px;
+  }
+  .footergrid .griditem p {
+    font-size: 19px;
+  }
+  header {
+    font-size: 25px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9A031E), to(#520505));
+    background-image: linear-gradient(#9A031E, #520505);
+  }
+  #menu {
+    font-size: 25px;
+  }
+  .parallax {
+    height: 50vh;
+  }
+  .parallax .centertext {
+    font-size: 60px;
+  }
+  .description .aboutcontent h4 {
+    font-size: 38px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#172121), to(#2C6E49));
+    background-image: linear-gradient(to right, #172121, #2C6E49);
+  }
+  .description .aboutcontent p {
+    font-size: 28px;
+  }
+  .description .aboutusimage img {
+    width: 30vw;
+  }
+  .description .aboutusimage img:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  .description .video h4 {
+    background-image: -webkit-gradient(linear, left top, right top, from(#172121), to(#2C6E49));
+    background-image: linear-gradient(to right, #172121, #2C6E49);
+    font-size: 38px;
+  }
+  .description .video iframe {
+    height: 60vh;
+  }
+  .scrolltothetop a {
+    font-size: 40px;
+  }
 }
 /*# sourceMappingURL=gallery.css.map */

@@ -3,8 +3,9 @@
   margin: 0;
 }
 
-body {
+html, body {
   background-color: #172121;
+  scroll-behavior: smooth;
 }
 
 #menu {
@@ -54,7 +55,7 @@ header {
 }
 
 header .logo {
-  width: 40px;
+  width: 50px;
   height: auto;
   background-color: #2C6E49;
   position: relative;
@@ -85,7 +86,6 @@ header .logo {
 
 .description {
   background-color: #172121;
-  height: 1620px;
   font-size: 30px;
   text-align: center;
   color: #F7FFF7;
@@ -120,7 +120,7 @@ header .logo {
 }
 
 div.scrollmenu {
-  margin: 15px;
+  margin-top: 15px;
   background-color: #F7FFF7;
   border: black 1px solid;
   padding: 20px;
@@ -143,19 +143,27 @@ div.scrollmenu img {
   background-color: #9A031E;
 }
 
-div.scrollmenu a {
-  text-decoration: none;
-  background-color: #ffffff;
-  color: #172121;
-  font-size: 17px;
-  text-align: center;
-}
-
 div.scrollmenu img {
   display: inline-block;
   color: white;
   text-align: center;
   padding: 14px;
+}
+
+.gallerybutton {
+  background-color: #F7FFF7;
+  margin-bottom: 15px;
+  padding: 5px;
+  border: solid #172121 1px;
+}
+
+.gallerybutton a {
+  text-decoration: none;
+  background-color: #2C6E49;
+  color: #F7FFF7;
+  font-size: 17px;
+  font-family: sans-serif;
+  text-align: center;
 }
 
 footer {
@@ -209,6 +217,29 @@ footer {
   background-color: #2C6E49;
 }
 
+.scrolltothetop {
+  position: fixed;
+  bottom: 30px;
+  float: right;
+  right: 18.5%;
+  max-width: 30px;
+  padding: .5px;
+  left: 77.25%;
+}
+
+.scrolltothetop a {
+  font-size: 33px;
+  text-decoration: none;
+  background-color: #F7FFF7;
+  border: #172121;
+  border-radius: 4px;
+  color: #172121;
+}
+
+.scrolltothetop a:hover {
+  background-color: #2C6E49;
+}
+
 .frontpagemenu img {
   width: 39vw;
   height: auto;
@@ -234,15 +265,104 @@ footer {
 
 .ordering img {
   margin: 8px;
-  width: 45vw;
-  height: auto;
-  background-color: #000000;
+  width: 38vw;
+  height: 8vh;
 }
 
 .ordering a {
   text-decoration: none;
   font-size: 17px;
-  background-color: #F7FFF7;
-  color: #172121;
+}
+
+@media only screen and (min-width: 768px) {
+  .ordering {
+    margin: 16px;
+  }
+  .ordering img {
+    width: 33vw;
+    height: 12vh;
+  }
+  .frontpagemenu img {
+    width: 75vw;
+    left: 50vw;
+    padding: 6px;
+    margin: 9px;
+  }
+  .frontpagemenu a {
+    font-size: 26px;
+  }
+  .scrolltothetop a {
+    font-size: 40px;
+  }
+  .footergrid {
+    width: 100vw;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9A031E), to(#520505));
+    background-image: linear-gradient(#9A031E, #520505);
+  }
+  .footergrid .griditem {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9A031E), to(#520505));
+    background-image: linear-gradient(#9A031E, #520505);
+  }
+  .footergrid .griditem h2 {
+    font-size: 28px;
+  }
+  .footergrid .griditem h3 {
+    font-size: 24px;
+  }
+  .footergrid .griditem a {
+    font-size: 24px;
+    color: black;
+  }
+  .footergrid .griditem img {
+    width: 45px;
+    height: 45px;
+  }
+  .footergrid .griditem p {
+    font-size: 19px;
+  }
+  .gallerybutton {
+    background-image: -webkit-gradient(linear, left top, right top, from(#9A031E), to(#3d0404));
+    background-image: linear-gradient(to right, #9A031E, #3d0404);
+    border: black 2px solid;
+  }
+  .gallerybutton a {
+    font-size: 25px;
+    border: solid 1px #F7FFF7;
+    background-color: #172121;
+    color: #F7FFF7;
+  }
+  div.scrollmenu {
+    background-image: -webkit-gradient(linear, left top, right top, from(#9A031E), to(#3d0808));
+    background-image: linear-gradient(to right, #9A031E, #3d0808);
+  }
+  div.scrollmenu img {
+    width: 50vw;
+    height: 35vh;
+    padding: 13px;
+    background-color: #F7FFF7;
+    border: #000000 3px solid;
+  }
+  header {
+    font-size: 25px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9A031E), to(#520505));
+    background-image: linear-gradient(#9A031E, #520505);
+  }
+  #menu {
+    font-size: 25px;
+  }
+  .parallax {
+    height: 50vh;
+  }
+  .parallax .centertext {
+    font-size: 60px;
+  }
+  .description h3 {
+    font-size: 38px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#172121), to(#2C6E49));
+    background-image: linear-gradient(to right, #172121, #2C6E49);
+  }
+  .description p {
+    font-size: 25px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

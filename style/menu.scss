@@ -45,7 +45,7 @@ header{
     text-align: center;
     width: 100vw;
     .logo{
-        width: 40px;
+        width: 50px;
         height: auto;
         background-color: #2C6E49;
         position: relative;
@@ -79,7 +79,6 @@ header{
 
 .description{
     background-color: #172121;
-    height: 1000px;
     font-size: 30px;
     text-align: center;
     color: #F7FFF7;
@@ -174,6 +173,28 @@ footer{
     }
 }
 
+.scrolltothetop{
+    position: fixed;
+    bottom: 30px;
+    float: right;
+    right: 18.5%;
+    max-width: 30px;
+    padding: .5px;
+    left: 77.25%;
+    a{
+        font-size: 33px;
+        text-decoration: none;
+        background-color: #F7FFF7;
+        border: #172121;
+        border-radius: 4px;
+        color: #172121;
+        &:hover{
+            background-color: #2C6E49;
+        }
+    }
+    
+}
+
 .menunavbar{
     font-size: 25px;
     width: 100vw;
@@ -203,4 +224,83 @@ footer{
 
 }
 
+@media only screen and (min-width: 768px) {
+    
+    header{
+        background-image: linear-gradient( #9A031E,#520505);
+        font-size: 25px;
+    }
+    
+    #menu{
+        font-size: 25px;
+    }
+    .parallax{
+        height: 50vh;
+        .centertext{
+        font-size: 60px;
+    }
+    }
+    .footergrid{
+        width: 100vw;
+        background-image: linear-gradient( #9A031E,#520505);
+        .griditem{
+            background-image: linear-gradient( #9A031E,#520505);
+            
+            h2{
+                font-size: 28px;
+            }
+            h3{
+                font-size: 24px;
+            }
+            a{
+                font-size: 24px;
+                color: black;
+            }
+            img{
+                width: 45px;
+                height: 45px;
+            }
+            p{
+                font-size: 19px;
+            }
+        }
+    }
+    .scrolltothetop{
+        a{
+            font-size: 40px;
+        }
+    }
 
+    .menunavbar{
+        li a{
+            
+        font-size: 30px;
+        padding: 5px 57px;
+        
+    }
+}
+.description{
+    .menuitem{
+        li{
+            font-size: 25px;
+            padding: 10px;
+            margin: 5px;
+            border: solid 3px #2C6E49;
+            background-image: linear-gradient(#172121, #000000);
+        }
+        h2{
+            background-image: linear-gradient( #9A031E,#520505);
+            font-size: 38px;
+        }
+        h3{
+            background-image: linear-gradient(to right, #172121, #2C6E49);
+            font-size: 31px;
+            margin: 15px;
+        }
+        img{
+            width: 90vw;
+            
+        }
+    }
+}
+}
