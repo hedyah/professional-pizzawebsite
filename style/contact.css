@@ -270,6 +270,10 @@ footer {
     font-size: 24px;
     color: #000;
   }
+  .footergrid .griditem button a {
+    background-color: #520505;
+    display: block;
+  }
   .footergrid .griditem img {
     width: 45px;
     height: 45px;
@@ -308,7 +312,7 @@ footer {
     font-size: 22px;
   }
   .description .hoursofoperation img {
-    width: 95vw;
+    width: 65vw;
     padding: 5px;
     background-color: black;
   }
@@ -329,7 +333,7 @@ footer {
     font-size: 25px;
   }
   .description .review img {
-    width: 95vw;
+    width: 65vw;
     padding: 5px;
     background-color: black;
   }
@@ -337,6 +341,119 @@ footer {
     font-size: 35px;
     background-image: -webkit-gradient(linear, left top, right top, from(#172121), to(#2C6E49));
     background-image: linear-gradient(to right, #172121, #2C6E49);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footergrid {
+    width: 100vw;
+  }
+  .footergrid .griditem h2 {
+    font-size: 25px;
+  }
+  .footergrid .griditem h3 {
+    font-size: 23px;
+  }
+  .footergrid .griditem a {
+    font-size: 18px;
+    color: black;
+  }
+  .footergrid .griditem img {
+    width: 40px;
+    height: 40px;
+  }
+  .footergrid .griditem p {
+    font-size: 19px;
+  }
+  header {
+    width: 100vw;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#172121), to(#2C6E49));
+    background-image: linear-gradient(#172121, #2C6E49);
+    font-size: 22px;
+  }
+  header .logo {
+    background-color: #9A031E;
+  }
+  #menu {
+    font-size: 20px;
+    float: left;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    padding-bottom: 12px;
+    padding-left: 30px;
+  }
+  #dropdown {
+    background-color: #F7FFF7;
+    padding: 3px;
+    position: absolute;
+    display: inline-block;
+  }
+  #dropdown ul {
+    margin: 0;
+    display: inline;
+  }
+  #dropdown li {
+    padding: 3px 150px;
+    z-index: 2;
+  }
+  #dropdown ul li {
+    display: inline-block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .description .hoursofoperation {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#172121), to(#0e1410));
+    background-image: linear-gradient(#172121, #0e1410);
+  }
+  .description .hoursofoperation h2 {
+    font-size: 33px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9A031E), to(#520505));
+    background-image: linear-gradient(#9A031E, #520505);
+  }
+  .description .hoursofoperation li {
+    font-size: 22px;
+    display: inline-block;
+  }
+  .description .hoursofoperation button a {
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+  }
+  .description .hoursofoperation img {
+    width: 30vw;
+  }
+  .description .review {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#172121), to(#011d0a));
+    background-image: linear-gradient(#172121, #011d0a);
+  }
+  .description .review h2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9A031E), to(#520505));
+    background-image: linear-gradient(#9A031E, #520505);
+  }
+  .description .review img {
+    width: 30vw;
+  }
+  .description .review button a {
+    font-size: 18px;
+  }
+  .description .review li {
+    font-size: 22px;
+    display: inline-block;
+  }
+  .description #map {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#172121), to(#2C6E49));
+    background-image: linear-gradient(#172121, #2C6E49);
+  }
+  .description #map h2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9A031E), to(#520505));
+    background-image: linear-gradient(#9A031E, #520505);
+  }
+  .description #map iframe {
+    width: 40vw;
+    height: 50vh;
+    margin-left: 30%;
   }
 }
 /*# sourceMappingURL=contact.css.map */

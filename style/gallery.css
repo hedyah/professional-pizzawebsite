@@ -113,11 +113,16 @@ header .logo {
   font-family: sans-serif;
   padding: 8px;
   margin: 5px;
+  background-color: black;
 }
 
 .description .aboutcontent img {
   width: 100vw;
   background-color: #000000;
+}
+
+.description .aboutcontent .extraimg {
+  display: none;
 }
 
 .parallax {
@@ -236,6 +241,10 @@ footer {
     font-size: 24px;
     color: #000;
   }
+  .footergrid .griditem button a {
+    background-color: #520505;
+    display: block;
+  }
   .footergrid .griditem img {
     width: 45px;
     height: 45px;
@@ -282,6 +291,121 @@ footer {
   }
   .scrolltothetop a {
     font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #menu {
+    font-size: 20px;
+  }
+  header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#172121), to(#2C6E49));
+    background-image: linear-gradient(#172121, #2C6E49);
+    font-size: 22px;
+  }
+  header .logo {
+    background-color: #9A031E;
+  }
+  .footergrid {
+    width: 100vw;
+  }
+  .footergrid .griditem h2 {
+    font-size: 25px;
+  }
+  .footergrid .griditem h3 {
+    font-size: 23px;
+  }
+  .footergrid .griditem a {
+    font-size: 18px;
+    color: black;
+  }
+  .footergrid .griditem img {
+    width: 40px;
+    height: 40px;
+  }
+  .footergrid .griditem p {
+    font-size: 19px;
+  }
+  .description .aboutusimage {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#2C6E49));
+    background-image: linear-gradient(#000000, #2C6E49);
+  }
+  .description .aboutusimage img {
+    width: 20vw;
+    background-color: #000000;
+    padding: 8px;
+  }
+  .description .aboutusimage img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .description .aboutcontent {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#172121));
+    background-image: linear-gradient(#000000, #172121);
+  }
+  .description .aboutcontent h4 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9A031E), to(#520505));
+    background-image: linear-gradient(#9A031E, #520505);
+    font-size: 30px;
+    padding: 5px;
+  }
+  .description .aboutcontent p {
+    margin: 25px;
+    font-size: 23px;
+    background-color: black;
+  }
+  .description .aboutcontent img {
+    margin: 25px;
+    width: 28vw;
+    padding: 5px;
+  }
+  .description .aboutcontent .extraimg {
+    display: initial;
+  }
+  .description .video {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#172121));
+    background-image: linear-gradient(#000000, #172121);
+  }
+  .description .video h4 {
+    margin: 25px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9A031E), to(#520505));
+    background-image: linear-gradient(#9A031E, #520505);
+    font-size: 30px;
+  }
+  .description .video iframe {
+    width: 50vw;
+    height: 60vh;
+    background-color: black;
+    padding: 7px;
+  }
+  #menu {
+    font-size: 20px;
+    float: left;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    padding-bottom: 12px;
+    padding-left: 30px;
+  }
+  #dropdown {
+    background-color: #F7FFF7;
+    padding: 3px;
+    position: absolute;
+    display: inline-block;
+  }
+  #dropdown ul {
+    margin: 0;
+    display: inline;
+  }
+  #dropdown li {
+    padding: 3px 150px;
+    z-index: 2;
+  }
+  #dropdown ul li {
+    display: inline-block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=gallery.css.map */
