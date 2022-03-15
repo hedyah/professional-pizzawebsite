@@ -7,7 +7,7 @@ html, body{
     background-color: #172121;
     scroll-behavior: smooth;
 }
-
+/*this is the navbar*/
 #menu{
     user-select: none;
     display: block;
@@ -36,7 +36,7 @@ html, body{
     text-align: center;
     
 }
-
+/*This is the header*/
 header{
     color: #F7FFF7;
     position: relative;
@@ -51,10 +51,12 @@ header{
         position: relative;
         border-radius: 50%;
     }
-    
+    #navbar2{
+    display: none;
+}
 }
 
-
+/*This is the parallax effect*/
 .parallax{
     height: 45vh;
     background-image:url(/images/Gelato.jpeg);
@@ -84,7 +86,7 @@ header{
     color: #F7FFF7;
     p{
         font-size: 18px;
-    }
+    }/*This is the specails of the week section*/
     #specialsoftheweek{
         background-position: center;
         background-repeat: no-repeat;
@@ -123,7 +125,7 @@ header{
         }
         
     }
-    
+    /*This is the menu item section, where all the images and menu descriptions are*/
     .menuitem{
 
         .extraimg{
@@ -168,7 +170,7 @@ header{
     
     
 }  
-
+/*This is the footer*/
 footer{
     color: #F7FFF7;
     background-color: #9A031E;
@@ -239,7 +241,7 @@ footer{
     }
     
 }
-
+/*This is the menu navbar that brings you to the differnt sections*/
 .menunavbar{
     font-size: 25px;
     width: 100vw;
@@ -269,7 +271,7 @@ footer{
     }
 
 }
-
+/*This is the Tablet version, i adjusted the font size and images*/
 @media only screen and (min-width: 768px) {
     
     header{
@@ -373,21 +375,53 @@ footer{
 }
 }
 
-
+/*This is the desktop version*/
 @media only screen and (min-width: 1200px){
     
-    
+    /*I cancel out the old navbar and add in the new one*/
     #menu{
-        font-size: 20px;
+        display: none;
     }
+        
+    
+
     header{
+        width: 100vw;
         background-image: linear-gradient(#172121, #2C6E49 );
         font-size: 22px;
         .logo{
             background-color: #9A031E;
         }
+        #navbar2{
+            display: initial;
+            font-size: 25px;
+            width: 100vw;
+            text-align: center;
+        ul{
+        position: absolute;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #F7FFF7;
+        width: 100vw;
+        }
+        li{
+        float: left;
+        }
+        li a{
+        display: block;
+        color: #172121;
+        font-size: 22px;
+        padding: 4px 13px;
+        text-decoration: none;
+        width: 20vw;
+        &:hover{
+            background-color: #9A031E;
+            }
+        }
+        }
     }
-
+/*This is the footer*/
     .footergrid{
         width: 100vw;
         
@@ -415,42 +449,19 @@ footer{
         }
     }
 
-    #menu{
-        font-size: 20px;
-        float: left;
-        display:block;
-        position:sticky;
-        padding-bottom: 12px;
-        padding-left: 30px;
-    }
-        
-        #dropdown{
-            background-color: #F7FFF7;
-            padding: 3px;
-            position: absolute;
-            display: inline-block;
-            ul{
-                margin: 0;
-                display: inline;
-            }
-            li{
-                padding: 3px 150px;
-                z-index: 2;
-            }
-
-            ul li{
-                display: inline-block;
-                align-items: center;
-            }
-        }
+/*This is the menu navbar */
 
     .menunavbar{
         
+        
         li a{
         font-size: 26px;
-        padding: 4px 148px;
+        padding: 4px 5px;
+        width: 19vw;
+        border: solid 1px #172121;
+        
     }
-    }
+    }/*This is the special of the week and i added the hover effect so that it displays and image*/
     .description{
         #specialsoftheweek{
         background-position: center;
@@ -483,7 +494,7 @@ footer{
             button{
                 display: none;
             }
-        }
+        }/*I added the hover effect to the images and the menu items*/
         .menuitem{
             background-image: linear-gradient(#000000, #050806);
             .extraimg{

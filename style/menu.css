@@ -8,6 +8,7 @@ html, body {
   scroll-behavior: smooth;
 }
 
+/*this is the navbar*/
 #menu {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -41,6 +42,7 @@ html, body {
   text-align: center;
 }
 
+/*This is the header*/
 header {
   color: #F7FFF7;
   position: relative;
@@ -58,6 +60,11 @@ header .logo {
   border-radius: 50%;
 }
 
+header #navbar2 {
+  display: none;
+}
+
+/*This is the parallax effect*/
 .parallax {
   height: 45vh;
   background-image: url(/images/Gelato.jpeg);
@@ -85,6 +92,8 @@ header .logo {
   font-size: 30px;
   text-align: center;
   color: #F7FFF7;
+  /*This is the specails of the week section*/
+  /*This is the menu item section, where all the images and menu descriptions are*/
 }
 
 .description p {
@@ -170,6 +179,7 @@ header .logo {
   list-style-type: none;
 }
 
+/*This is the footer*/
 footer {
   color: #F7FFF7;
   background-color: #9A031E;
@@ -245,6 +255,7 @@ footer {
   background-color: #2C6E49;
 }
 
+/*This is the menu navbar that brings you to the differnt sections*/
 .menunavbar {
   font-size: 25px;
   width: 100vw;
@@ -280,6 +291,7 @@ footer {
   background-color: #2C6E49;
 }
 
+/*This is the Tablet version, i adjusted the font size and images*/
 @media only screen and (min-width: 768px) {
   header {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#9A031E), to(#520505));
@@ -374,11 +386,14 @@ footer {
   }
 }
 
+/*This is the desktop version*/
 @media only screen and (min-width: 1200px) {
+  /*I cancel out the old navbar and add in the new one*/
   #menu {
-    font-size: 20px;
+    display: none;
   }
   header {
+    width: 100vw;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#172121), to(#2C6E49));
     background-image: linear-gradient(#172121, #2C6E49);
     font-size: 22px;
@@ -386,6 +401,35 @@ footer {
   header .logo {
     background-color: #9A031E;
   }
+  header #navbar2 {
+    display: initial;
+    font-size: 25px;
+    width: 100vw;
+    text-align: center;
+  }
+  header #navbar2 ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #F7FFF7;
+    width: 100vw;
+  }
+  header #navbar2 li {
+    float: left;
+  }
+  header #navbar2 li a {
+    display: block;
+    color: #172121;
+    font-size: 22px;
+    padding: 4px 13px;
+    text-decoration: none;
+    width: 20vw;
+  }
+  header #navbar2 li a:hover {
+    background-color: #9A031E;
+  }
+  /*This is the footer*/
   .footergrid {
     width: 100vw;
   }
@@ -406,38 +450,16 @@ footer {
   .footergrid .griditem p {
     font-size: 19px;
   }
-  #menu {
-    font-size: 20px;
-    float: left;
-    display: block;
-    position: -webkit-sticky;
-    position: sticky;
-    padding-bottom: 12px;
-    padding-left: 30px;
-  }
-  #dropdown {
-    background-color: #F7FFF7;
-    padding: 3px;
-    position: absolute;
-    display: inline-block;
-  }
-  #dropdown ul {
-    margin: 0;
-    display: inline;
-  }
-  #dropdown li {
-    padding: 3px 150px;
-    z-index: 2;
-  }
-  #dropdown ul li {
-    display: inline-block;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+  /*This is the menu navbar */
   .menunavbar li a {
     font-size: 26px;
-    padding: 4px 148px;
+    padding: 4px 5px;
+    width: 19vw;
+    border: solid 1px #172121;
+  }
+  /*This is the special of the week and i added the hover effect so that it displays and image*/
+  .description {
+    /*I added the hover effect to the images and the menu items*/
   }
   .description #specialsoftheweek {
     background-position: center;

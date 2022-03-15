@@ -7,7 +7,7 @@ html,body{
     background-color: #172121;
     scroll-behavior: smooth;
 }
-
+/*This is the navbar*/
 #menu{
     user-select: none;
     display: block;
@@ -40,7 +40,7 @@ html,body{
         text-decoration: none;
     }
 }
-
+/*This is the header*/
 header{
     color: #F7FFF7;
     position: relative;
@@ -55,7 +55,9 @@ header{
         position: relative;
         border-radius: 50%;
     }
-    
+    #navbar2{
+    display: none;
+}
 }
 
 .description{
@@ -63,7 +65,7 @@ header{
     font-size: 30px;
     text-align: center;
     color: #F7FFF7;
-    .aboutusimage{
+    .aboutusimage{/*These are the images in the begining of the page*/
         background-color: #000000;
         img{
         width: 28vw;
@@ -75,7 +77,7 @@ header{
         }
     
         }
-    }
+    }/*This is the video iframe, i adjusted the size */
     .video{
         h4{
             font-family: cursive;
@@ -120,7 +122,7 @@ header{
 }
 
 
-
+/*This is the parallax effect*/
 .parallax{
     height: 45vh;
     background-image:url(/images/Pizza-chef.jpeg);
@@ -142,6 +144,7 @@ header{
     }    
     
 }
+/*This is the scroll to the top button*/
 .scrolltothetop{
     position: fixed;
     bottom: 30px;
@@ -163,7 +166,7 @@ header{
     }
     
 }
-
+/*This is the footer*/
 footer{
     color: #F7FFF7;
     background-color: #9A031E;
@@ -211,7 +214,7 @@ footer{
     
     }
 }
-
+/*This is the tablet version*/
 @media only screen and (min-width: 768px) {
     
     .footergrid{
@@ -241,7 +244,7 @@ footer{
                 font-size: 19px;
             }
         }
-    }
+    }/*I adjusted the images and font size*/
     header{
         font-size: 25px;
         background-image: linear-gradient( #9A031E,#520505)
@@ -293,19 +296,51 @@ footer{
     }
     
 }
-
+/*This is the desktop version*/
 @media only screen and (min-width: 1200px){
     #menu{
-        font-size: 20px;
+        display: none;
     }
+        
+    
+/*I added the new header and navbar*/
     header{
+        width: 100vw;
         background-image: linear-gradient(#172121, #2C6E49 );
         font-size: 22px;
         .logo{
             background-color: #9A031E;
         }
+        #navbar2{
+            display: initial;
+            font-size: 25px;
+            width: 100vw;
+            text-align: center;
+        ul{
+        position: absolute;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #F7FFF7;
+        width: 100vw;
+        }
+        li{
+        float: left;
+        }
+        li a{
+        display: block;
+        color: #172121;
+        font-size: 22px;
+        padding: 4px 13px;
+        text-decoration: none;
+        width: 20vw;
+        &:hover{
+            background-color: #9A031E;
+            }
+        }
+        }
     }
-
+/*This is the footer*/
     .footergrid{
         width: 100vw;
         
@@ -334,7 +369,7 @@ footer{
 .description{
     .aboutusimage{
         background-image: linear-gradient( #000000 , #2C6E49 );
-        img{
+        img{ /* i added a hover effect*/
             width: 20vw;
             background-color: #000000;
             padding: 8px;
@@ -343,7 +378,7 @@ footer{
             }
         }
     }
-    .aboutcontent{
+    .aboutcontent{ /*i added more images */
         background-image: linear-gradient( #000000 , #172121,);
         h4{
             background-image: linear-gradient(#9A031E,#520505);
@@ -367,7 +402,7 @@ footer{
         }
 
     }
-    .video{
+    .video{ /*i adjusted the video size*/
         background-image: linear-gradient( #000000 , #172121,);
         h4{
             margin: 25px;
@@ -384,33 +419,5 @@ footer{
         }
     }
 }
-#menu{
-    font-size: 20px;
-    float: left;
-    display:block;
-    position:sticky;
-    padding-bottom: 12px;
-    padding-left: 30px;
-    }
-    
-    #dropdown{
-        background-color: #F7FFF7;
-        padding: 3px;
-        position: absolute;
-        display: inline-block;
 
-        ul{
-            margin: 0;
-            display: inline;
-        }
-        li{
-            padding: 3px 150px;
-            z-index: 2;
-        }
-
-        ul li{
-            display: inline-block;
-            align-items: center;
-        }
-    }
 }

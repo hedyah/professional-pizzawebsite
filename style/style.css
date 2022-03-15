@@ -8,6 +8,7 @@ html, body {
   scroll-behavior: smooth;
 }
 
+/*This is the navbar/hamburger menu*/
 #menu {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -45,6 +46,7 @@ html, body {
   text-decoration: none;
 }
 
+/* This is the header with the logo amd the second navbar for the desktop version*/
 header {
   color: #F7FFF7;
   position: relative;
@@ -62,6 +64,11 @@ header .logo {
   border-radius: 50%;
 }
 
+header #navbar2 {
+  display: none;
+}
+
+/* This is the Parallax effect i used for the website*/
 .parallax {
   height: 45vh;
   background-image: url(/images/italybackgroundimage.jpeg);
@@ -84,6 +91,7 @@ header .logo {
   border: #F7FFF7 5px double;
 }
 
+/*This is where the content is styled for the main page*/
 .description {
   background-color: #172121;
   font-size: 30px;
@@ -119,6 +127,7 @@ header .logo {
   background-color: darkgreen;
 }
 
+/* This is the picture Carousel for the front page, it was quite challeging*/
 main#carousel {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -321,6 +330,7 @@ input:nth-of-type(8):checked ~ main#carousel {
   text-align: center;
 }
 
+/*This is the footer*/
 footer {
   color: #F7FFF7;
   background-color: #9A031E;
@@ -356,7 +366,7 @@ footer {
 }
 
 .footergrid .griditem h3 {
-  font-size: 25px;
+  font-size: 20px;
   font-family: cursive;
 }
 
@@ -372,6 +382,7 @@ footer {
   background-color: #2C6E49;
 }
 
+/*This is the scroll to the top button*/
 .scrolltothetop {
   position: fixed;
   bottom: 30px;
@@ -395,6 +406,7 @@ footer {
   background-color: #2C6E49;
 }
 
+/*This is the picture grid for the images on the front page, i have extra images that only display on the desktop version*/
 .frontpagemenu .menugrid-container {
   display: -ms-grid;
   display: grid;
@@ -435,6 +447,7 @@ footer {
   font-size: 17px;
 }
 
+/* This is the Tablet Version of my website*/
 @media only screen and (min-width: 768px) {
   .ordering {
     margin: 16px;
@@ -443,6 +456,7 @@ footer {
     width: 33vw;
     height: 12vh;
   }
+  /* I adjusted the images size*/
   main#carousel {
     background-color: #f7fff7;
     width: 96vw;
@@ -470,6 +484,7 @@ footer {
   .scrolltothetop a {
     font-size: 40px;
   }
+  /*This is the footer*/
   .footergrid {
     width: 100vw;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#9A031E), to(#520505));
@@ -511,6 +526,7 @@ footer {
     background-color: #172121;
     color: #F7FFF7;
   }
+  /*This is the header i changed the color a little bit*/
   header {
     font-size: 25px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#9A031E), to(#520505));
@@ -535,10 +551,12 @@ footer {
   }
 }
 
+/*This is the desktop verison of the website*/
 @media only screen and (min-width: 1200px) {
   .ordering img {
     width: 11vw;
   }
+  /* i adjusted the images and added the extra images for there is more content*/
   .frontpagemenu .extraimages {
     display: -ms-grid;
     display: grid;
@@ -581,35 +599,11 @@ footer {
   .gallerybutton a {
     font-size: 22px;
   }
+  /*This is the old navbar, and i set it to display none to hide it*/
   #menu {
-    font-size: 20px;
-    float: left;
-    display: block;
-    position: -webkit-sticky;
-    position: sticky;
-    padding-bottom: 12px;
-    padding-left: 30px;
+    display: none;
   }
-  #dropdown {
-    background-color: #F7FFF7;
-    padding: 3px;
-    position: absolute;
-    display: inline-block;
-  }
-  #dropdown ul {
-    margin: 0;
-    display: inline;
-  }
-  #dropdown li {
-    padding: 3px 150px;
-    z-index: 2;
-  }
-  #dropdown ul li {
-    display: inline-block;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+  /*This is the new navbar that is displayed only for the desktop version*/
   header {
     width: 100vw;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#172121), to(#2C6E49));
@@ -619,6 +613,35 @@ footer {
   header .logo {
     background-color: #9A031E;
   }
+  header #navbar2 {
+    display: initial;
+    font-size: 25px;
+    width: 100vw;
+    text-align: center;
+  }
+  header #navbar2 ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #F7FFF7;
+    width: 100vw;
+  }
+  header #navbar2 li {
+    float: left;
+  }
+  header #navbar2 li a {
+    display: block;
+    color: #172121;
+    font-size: 22px;
+    padding: 4px 15px;
+    text-decoration: none;
+    width: 20vw;
+  }
+  header #navbar2 li a:hover {
+    background-color: #9A031E;
+  }
+  /*This is the footer*/
   .footergrid {
     width: 100vw;
   }

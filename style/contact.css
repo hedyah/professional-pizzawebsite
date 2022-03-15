@@ -8,6 +8,7 @@ html, body {
   scroll-behavior: smooth;
 }
 
+/*This is the navbar*/
 #dropdown {
   display: none;
   position: absolute;
@@ -62,6 +63,11 @@ header .logo {
   border-radius: 50%;
 }
 
+header #navbar2 {
+  display: none;
+}
+
+/*This is the parallax effect*/
 .parallax {
   min-height: 45vh;
   background-image: url(/images/italian-restaurants.jpeg);
@@ -84,6 +90,7 @@ header .logo {
   border: #F7FFF7 5px double;
 }
 
+/*This is the location section, the iframe for the google maps*/
 #map h2 {
   text-align: center;
   background-color: #2C6E49;
@@ -99,6 +106,7 @@ header .logo {
   height: 50vh;
 }
 
+/* This is the desctiption section that includes, the hours of operation, and reviews*/
 .description {
   color: #F7FFF7;
   background-color: #172121;
@@ -173,6 +181,7 @@ header .logo {
   padding: 3px;
 }
 
+/*This is the scroll to the top button*/
 .scrolltothetop {
   position: fixed;
   bottom: 30px;
@@ -196,6 +205,7 @@ header .logo {
   background-color: #2C6E49;
 }
 
+/*This is the footer*/
 footer {
   color: #F7FFF7;
   background-color: #9A031E;
@@ -247,6 +257,7 @@ footer {
   background-color: #2C6E49;
 }
 
+/*This is the tablet version*/
 @media only screen and (min-width: 768px) {
   .scrolltothetop a {
     font-size: 40px;
@@ -295,6 +306,7 @@ footer {
   .parallax .centertext {
     font-size: 60px;
   }
+  /*For the Tablet version I adjusted the font and images to be a little bigger*/
   .description .hoursofoperation h2 {
     font-size: 35px;
     background-image: -webkit-gradient(linear, left top, right top, from(#172121), to(#2C6E49));
@@ -344,6 +356,7 @@ footer {
   }
 }
 
+/*This is the desktop version of the website*/
 @media only screen and (min-width: 1200px) {
   .footergrid {
     width: 100vw;
@@ -365,6 +378,10 @@ footer {
   .footergrid .griditem p {
     font-size: 19px;
   }
+  /* I hid the old navbar and added the new one with #navbar2*/
+  #menu {
+    display: none;
+  }
   header {
     width: 100vw;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#172121), to(#2C6E49));
@@ -374,34 +391,37 @@ footer {
   header .logo {
     background-color: #9A031E;
   }
-  #menu {
-    font-size: 20px;
-    float: left;
-    display: block;
-    position: -webkit-sticky;
-    position: sticky;
-    padding-bottom: 12px;
-    padding-left: 30px;
+  header #navbar2 {
+    display: initial;
+    font-size: 25px;
+    width: 100vw;
+    text-align: center;
   }
-  #dropdown {
-    background-color: #F7FFF7;
-    padding: 3px;
+  header #navbar2 ul {
     position: absolute;
-    display: inline-block;
-  }
-  #dropdown ul {
+    list-style-type: none;
     margin: 0;
-    display: inline;
+    padding: 0;
+    background-color: #F7FFF7;
+    width: 100vw;
   }
-  #dropdown li {
-    padding: 3px 150px;
-    z-index: 2;
+  header #navbar2 li {
+    float: left;
   }
-  #dropdown ul li {
-    display: inline-block;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  header #navbar2 li a {
+    display: block;
+    color: #172121;
+    font-size: 22px;
+    padding: 4px 13px;
+    text-decoration: none;
+    width: 20vw;
+  }
+  header #navbar2 li a:hover {
+    background-color: #9A031E;
+  }
+  /*I adjusted the image size and font size for the contact page*/
+  .description {
+    /*I adjusted the size of the map so its not super wide*/
   }
   .description .hoursofoperation {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#172121), to(#0e1410));
